@@ -137,7 +137,7 @@ namespace Project_TCC.Forms
             label43.Text = "satisfied";
             label42.Text = "satisfied";
 
-
+            //알라라랄랄ㄹ
             //vibration check
 
             /*조건
