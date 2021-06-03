@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44B5E9E0-2B40-4AF7-A175-15D82055C33A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_TCC</RootNamespace>
+    <AssemblyName>Project_TCC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\EIeff_Detail_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EIeff_Detail_Form.Designer.cs">
+      <DependentUpon>EIeff_Detail_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MfVf_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MfVf_detail.Designer.cs">
+      <DependentUpon>MfVf_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Get_ks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Get_ks.Designer.cs">
+      <DependentUpon>Get_ks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Get_LayerProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Get_LayerProperties.Designer.cs">
+      <DependentUpon>Get_LayerProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Get_seff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Get_seff.Designer.cs">
+      <DependentUpon>Get_seff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewULS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewULS.Designer.cs">
+      <DependentUpon>NewULS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Select_LiveLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Select_LiveLoad.Designer.cs">
+      <DependentUpon>Select_LiveLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShearForce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShearForce.Designer.cs">
+      <DependentUpon>ShearForce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SLS_check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SLS_check.Designer.cs">
+      <DependentUpon>SLS_check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Startpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Startpage.Designer.cs">
+      <DependentUpon>Startpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ULS__Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ULS__Check.Designer.cs">
+      <DependentUpon>ULS__Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InputForm.Designer.cs">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectForm.Designer.cs">
+      <DependentUpon>SelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ks_database.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Property_ASD.cs" />
+    <EmbeddedResource Include="Forms\EIeff_Detail_Form.resx">
+      <DependentUpon>EIeff_Detail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MfVf_detail.resx">
+      <DependentUpon>MfVf_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Get_ks.resx">
+      <DependentUpon>Get_ks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Get_LayerProperties.resx">
+      <DependentUpon>Get_LayerProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Get_seff.resx">
+      <DependentUpon>Get_seff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InputForm.resx">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewULS.resx">
+      <DependentUpon>NewULS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectForm.resx">
+      <DependentUpon>SelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Select_LiveLoad.resx">
+      <DependentUpon>Select_LiveLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShearForce.resx">
+      <DependentUpon>ShearForce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SLS_check.resx">
+      <DependentUpon>SLS_check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Startpage.resx">
+      <DependentUpon>Startpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ULS__Check.resx">
+      <DependentUpon>ULS__Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flatslab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribslab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TCC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_rib_slab_major.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eieff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\initialize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\span.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TCC_NEG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TCC_NEG2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TCC_POS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EIeff_detail_neg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EIeff_detail_pos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slab_detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screw spacing%28seff%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planeslab screw_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planeslab screw_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planeslab screw_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planeslab screw_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planeslab screw_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribslab_screw_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribslab_screw_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribslab_screw_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribslab_screw_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribslab_screw_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat_slab_layer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\그림1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribscrew_part4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribscrew_part5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribscrew_part1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribscrew_part2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribscrew_part3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factor_Ks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factor_K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rib_slab_layer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rib_metal_connector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rib_screw_connector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rib_dowel_connector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rib_notch_connector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\total_rib_screw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\total_rib_notch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\total_rib_metal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\total_rib_dowel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_rgamt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dowel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screw2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D_picture_screw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D_picture_screwnotch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D_picture_metal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D_picture_notch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layerpropeties_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notch_depth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metal_plate_length.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mf,Vf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mf_equation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wf_equation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vf_equation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mf_con_pos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mf_sin_neg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vf_con.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delta_total.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
